@@ -1,0 +1,1 @@
+geth --http --http.api debug,admin,miner,personal,eth,net,web3 --http.port "8086" --datadir C:/Users/rapado/AppData/Local/Ethereum/PrivateChain2 --networkid 989 --nodiscover --port 30306 --ipcdisable --syncmode "full"

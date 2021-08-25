@@ -1,0 +1,1 @@
+geth --http --http.api debug,admin,miner,personal,eth,net,web3 --http.port "8085" --datadir C:/Users/rapado/AppData/Local/Ethereum/PrivateChain --networkid 989 --nodiscover --syncmode "full" --http.corsdomain "*" --allow-insecure-unlock

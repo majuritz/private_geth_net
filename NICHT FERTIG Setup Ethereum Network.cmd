@@ -1,0 +1,2 @@
+start CMD_Files\PrivateNet_SetUp.cmd
+start CMD_Files\PrivateNet2_SetUp.cmd

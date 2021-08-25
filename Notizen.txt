@@ -1,0 +1,68 @@
+
+Passwort Master Seed:
+rapado123456
+
+============================================
+PrivateChain (Id: 989): 
+-------------------------------------------
+
+geth --http --http.port "8085" --datadir C:/Users/rapado/AppData/Local/Ethereum/PrivateChain init C:/Users/rapado/AppData/Local/Ethereum/genesis.json
+geth --http --http.api debug,admin,miner,personal,eth,net,web3 --rpcport "8085" --datadir C:/Users/rapado/AppData/Local/Ethereum/PrivateChain --networkid 989 --nodiscover --syncmode "full"
+
+Account 1:
+Adresse: "0x76b5883615783a317d682ab637a9615ff9db8344"
+Passwort: rap_acc1
+
+Account 3:
+Adresse: "0xadEAC10DA700B1A89e03B77dF9E4772511bcC6c0"
+Passwort: rap_acc3
+
+-------------------------------------------
+
+Account 2:
+Adresse: "0x1ba4331869f3e90cb4345c94846f8a6b0cf69516"
+Passwort: rap_acc2
+
+geth --http --http.port "8086" --datadir C:/Users/rapado/AppData/Local/Ethereum/PrivateChain2 init C:/Users/rapado/AppData/Local/Ethereum/genesis.json
+geth --http --http.api debug,admin,miner,personal,eth,net,web3 --rpcport "8086" --datadir C:/Users/rapado/AppData/Local/Ethereum/PrivateChain2 --networkid 989 --nodiscover --port 30306 --ipcdisable --syncmode "full"
+
+============================================
+Befehle:
+-------------------------------------------
+
+für JS Konsole:
+geth attach C:/Users/rapado/AppData/Local/Ethereum/PrivateChain/geth.ipc
+geth attach ipc:\\.\pipe\geth.ipc
+geth attach http://localhost:<port>
+personal.newAccount()
+eth.getBalance("ENTER_ACCOUNT_ADDRESS_HERE")
+eth.getBalance("0x76b5883615783a317d682ab637a9615ff9db8344")
+miner.start()
+miner.stop()
+admin.nodeInfo.enode
+admin.addPeer(<enode>)
+admin.peers
+debug.setHead(0xC)
+web3.personal.unlockAccount(web3.personal.listAccounts[0], "rap_acc1", 20000).then(console.log('Account unlocked!'))
+eth.sendTransaction({from:"0x76b5883615783a317d682ab637a9615ff9db8344", to:"0x2971f9F7c04B05ad434A222e50eC975635ECef16", value: web3.toWei(4, "ether")})
+
+https://medium.com/swlh/how-to-set-up-a-private-ethereum-blockchain-c0e74260492c
+
+============================================
+MetaMask: 
+-------------------------------------------
+
+0x2971f9F7c04B05ad434A222e50eC975635ECef16
+
+Passwort:
+Rapado?!9
+
+Backup Schlüssel:
+property monitor depth shield rabbit win tooth soccer blind wise wolf inform
+
+
+
+ToDo:
+config toml ?
+synchronisation error
+contract mit remix ethereum
