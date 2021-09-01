@@ -65,4 +65,3 @@ property monitor depth shield rabbit win tooth soccer blind wise wolf inform
 ToDo:
 config toml ?
 synchronisation error
-contract mit remix ethereum
