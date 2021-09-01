@@ -1,2 +1,2 @@
-# private_geth_net
+# Privates Go Ethereum Netzwerk
  
